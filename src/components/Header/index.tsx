@@ -6,11 +6,12 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 type HeaderProps = {
   task: string;
+  inputRef: React.RefObject<TextInput>;
   onChangeText: (task: string) => void;
   onPress: () => void;
 };
 
-export function Header({ task, onChangeText, onPress }: HeaderProps) {
+export function Header({ task, inputRef, onChangeText, onPress }: HeaderProps) {
   return (
     <View style={styles.container}>
       <Image source={logoImage} />
@@ -21,6 +22,8 @@ export function Header({ task, onChangeText, onPress }: HeaderProps) {
           placeholderTextColor={theme.colors.base.gray300}
           value={task}
           onChangeText={onChangeText}
+          ref={inputRef}
+          onSubmitEditing={onPress}
         />
         <TouchableOpacity style={styles.button} onPress={onPress}>
           <MaterialCommunityIcons
