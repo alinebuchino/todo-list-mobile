@@ -1,4 +1,5 @@
 # todo-list-mobile
+
 Aplicação de controle de tarefas no estilo to-do list realizado para fixar fundamentos do React Native.
 
 Funcionalidades:
@@ -15,3 +16,5 @@ Conceitos aplicados como:
 - Listas e chaves no React Native
 - Propriedades
 - Componentização
+
+![](Todo-list.png)

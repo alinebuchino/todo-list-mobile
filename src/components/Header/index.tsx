@@ -17,7 +17,10 @@ export function Header({ task, inputRef, onChangeText, onPress }: HeaderProps) {
       <Image source={logoImage} />
       <View style={styles.form}>
         <TextInput
-          style={styles.input}
+          style={[
+            styles.input,
+            inputRef.current?.isFocused() && task ? styles.inputBorder : null,
+          ]}
           placeholder="Adicione uma nova tarefa"
           placeholderTextColor={theme.colors.base.gray300}
           value={task}
