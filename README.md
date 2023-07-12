@@ -4,17 +4,17 @@ Aplicação de controle de tarefas no estilo to-do list realizado para fixar fun
 
 Funcionalidades:
 
-- Adicionar uma nova tarefa
-- Marcar e desmarcar uma tarefa como concluída
-- Remover uma tarefa da listagem
-- Mostrar o progresso de conclusão das tarefas
+- [x] Adicionar uma nova tarefa
+- [x] Marcar e desmarcar uma tarefa como concluída
+- [x] Remover uma tarefa da listagem
+- [x] Mostrar o progresso de conclusão das tarefas
 
 Conceitos aplicados como:
 
-- Estados
-- Imutabilidade do estado
-- Listas e chaves no React Native
-- Propriedades
-- Componentização
+- [x] Estados
+- [x] Imutabilidade do estado
+- [x] Listas e chaves no React Native
+- [x] Propriedades
+- [x] Componentização
 
-![](Todo-list.png)
+![](todoList.png)
